@@ -1,13 +1,9 @@
-﻿using System;
-using W6.Restaurant.Interfaces;
+﻿using W6.Restaurant.Interfaces;
 
 namespace W6.Restaurant.Implementations
 {
     public class HardRockCook : ICook
     {
-        public string Prepare()
-        {
-            throw new NotImplementedException();
-        }
+        public string Prepare() => "Take a collection of knives and put some hard rockmusic on";
     }
 }
