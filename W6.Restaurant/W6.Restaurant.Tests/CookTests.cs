@@ -1,44 +1,19 @@
-using W6.Restaurant.Implementations;
 using Xunit;
 
 namespace W6.Restaurant.Tests
 {
     public class CookTests
     {
-        [Fact]
-        public void HardRockCookTest()
+        readonly CookFactory cookFactory = new();
+
+        [Theory]
+        [InlineData("HardRockCook", "Take a collection of knives and put some hardrock music on")]
+        [InlineData("SimpleCook", "Put an apron on")]
+        [InlineData("SoccerCook", "Open a beer and hum the anthem of their favourite soccer team")]
+        public void CookTest(string cookTypeName, string expected)
         {
             // Arrange
-            var cook = new HardRockCook();
-            var expected = "Take a collection of knives and put some hard rockmusic on";
-
-            // Act
-            var result = cook.Prepare();
-
-            // Assert
-            Assert.Equal(expected, result);
-        }
-
-        [Fact]
-        public void SimpleCookTest()
-        {
-            // Arrange
-            var cook = new SimpleCook();
-            var expected = "Put an apron on";
-
-            // Act
-            var result = cook.Prepare();
-
-            // Assert
-            Assert.Equal(expected, result);
-        }
-
-        [Fact]
-        public void SoccerTest()
-        {
-            // Arrange
-            var cook = new SoccerCook();
-            var expected = "Open a beer and hum the anthem of their favourite soccer team";
+            var cook = cookFactory.CreateCook(cookTypeName);
 
             // Act
             var result = cook.Prepare();
