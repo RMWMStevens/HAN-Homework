@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace W4.FizzBuzz.TTD.Exercises
+namespace W4.FizzBuzz_TDD.Exercises
 {
     public class StringCalculatorExercise
     {

@@ -1,8 +1,8 @@
-﻿using W4.FizzBuzz.TTD.Exercises;
+﻿using W4.FizzBuzz_TDD.Exercises;
 using System;
 using Xunit;
 
-namespace W4.FizzBuzz.TTD.Tests.ExercisesTests
+namespace W4.FizzBuzz_TDD.Tests.ExercisesTests
 {
     public class StringCalculatorExerciseTests
     {

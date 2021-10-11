@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>W4.FizzBuzz.TDD.Tests</RootNamespace>
+    <RootNamespace>W4.FizzBuzz_TDD.Tests</RootNamespace>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\W4.FizzBuzz.TDD\W4.FizzBuzz.TDD.csproj" />
+    <ProjectReference Include="..\W4.FizzBuzz_TDD\W4.FizzBuzz_TDD.csproj" />
   </ItemGroup>
 
 </Project>

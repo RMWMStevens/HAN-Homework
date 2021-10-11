@@ -1,6 +1,6 @@
-﻿using W4.FizzBuzz.TTD.Exercises;
+﻿using W4.FizzBuzz_TDD.Exercises;
 
-namespace W4.FizzBuzz.TTD
+namespace W4.FizzBuzz_TDD
 {
     class Program
     {
