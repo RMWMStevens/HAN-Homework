@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\W6.Restaurant\W6.Restaurant.csproj" />
+    <ProjectReference Include="..\OOSE.W6.Restaurant\OOSE.W6.Restaurant.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace W6.Restaurant
+namespace OOSE.W6.Restaurant
 {
     class Program
     {

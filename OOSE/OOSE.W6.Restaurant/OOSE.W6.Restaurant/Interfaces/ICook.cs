@@ -1,4 +1,4 @@
-﻿namespace W6.Restaurant.Interfaces
+﻿namespace OOSE.W6.Restaurant.Interfaces
 {
     public interface ICook
     {

@@ -1,6 +1,6 @@
-﻿using W6.Restaurant.Interfaces;
+﻿using OOSE.W6.Restaurant.Interfaces;
 
-namespace W6.Restaurant.Implementations
+namespace OOSE.W6.Restaurant.Implementations
 {
     public class HardRockCook : ICook
     {

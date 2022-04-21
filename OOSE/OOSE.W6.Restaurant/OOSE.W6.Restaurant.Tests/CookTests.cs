@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace W6.Restaurant.Tests
+namespace OOSE.W6.Restaurant.Tests
 {
     public class CookTests
     {

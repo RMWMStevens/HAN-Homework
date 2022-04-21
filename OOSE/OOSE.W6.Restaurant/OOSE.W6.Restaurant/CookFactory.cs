@@ -1,11 +1,11 @@
-﻿using System;
-using W6.Restaurant.Interfaces;
+﻿using OOSE.W6.Restaurant.Interfaces;
+using System;
 
-namespace W6.Restaurant
+namespace OOSE.W6.Restaurant
 {
     public class CookFactory
     {
-        string namespacePath = "W6.Restaurant.Implementations.";
+        readonly string namespacePath = "OOSE.W6.Restaurant.Implementations.";
 
         public ICook CreateCook(string cookType) => (ICook)Activator.CreateInstance(Type.GetType(namespacePath + cookType));
     }

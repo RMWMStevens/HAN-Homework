@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace W4.FizzBuzz_TDD.Exercises
+namespace OOSE.W4.FizzBuzz_TDD.Exercises
 {
     public class FizzBuzzExercise
     {
