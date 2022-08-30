@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOSE.W6.Restaurant", "OOSE.W6.Restaurant\OOSE.W6.Restaurant.csproj", "{C8F7C25C-DFE6-4BDC-B56E-8997E2E97F4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOSE1.W6.Restaurant", "OOSE1.W6.Restaurant\OOSE1.W6.Restaurant.csproj", "{C8F7C25C-DFE6-4BDC-B56E-8997E2E97F4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOSE.W6.Restaurant.Tests", "OOSE.W6.Restaurant.Tests\OOSE.W6.Restaurant.Tests.csproj", "{6EBB5FDA-07D4-4CBE-8475-A10B4FBB0096}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOSE1.W6.Restaurant.Tests", "OOSE1.W6.Restaurant.Tests\OOSE1.W6.Restaurant.Tests.csproj", "{6EBB5FDA-07D4-4CBE-8475-A10B4FBB0096}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

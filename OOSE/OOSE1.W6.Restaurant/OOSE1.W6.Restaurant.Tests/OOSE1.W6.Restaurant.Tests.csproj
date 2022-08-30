@@ -1,8 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>OOSE.W4.FizzBuzz_TDD.Tests</RootNamespace>
+    <TargetFramework>net6.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -21,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OOSE.W4.FizzBuzz_TDD\OOSE.W4.FizzBuzz_TDD.csproj" />
+    <ProjectReference Include="..\OOSE1.W6.Restaurant\OOSE1.W6.Restaurant.csproj" />
   </ItemGroup>
 
 </Project>
