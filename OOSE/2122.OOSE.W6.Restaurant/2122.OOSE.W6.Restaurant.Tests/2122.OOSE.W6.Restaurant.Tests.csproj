@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>OOSE.W4.FizzBuzz_TDD.Tests</RootNamespace>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -21,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OOSE1.W4.FizzBuzz_TDD\OOSE1.W4.FizzBuzz_TDD.csproj" />
+    <ProjectReference Include="..\2122.OOSE.W6.Restaurant\2122.OOSE.W6.Restaurant.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,9 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
-    <AssemblyName>OOSE.W6.Restaurant</AssemblyName>
+    <RootNamespace>2122.OOSE.W4.FizzBuzz_TDD</RootNamespace>
   </PropertyGroup>
 
 </Project>
