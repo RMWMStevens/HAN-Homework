@@ -1,4 +1,4 @@
-﻿using OOSE.W4.FizzBuzz_TTD.Exercises;
+﻿using OOSE.W4.FizzBuzz_TTD.FizzBuzz;
 
 var fizzBuzz = new FizzBuzzExercise();
 

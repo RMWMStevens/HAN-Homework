@@ -1,4 +1,4 @@
-﻿namespace OOSE.W4.FizzBuzz_TTD.Exercises
+﻿namespace OOSE.W4.FizzBuzz_TTD.Player
 {
     public class PlayerExercise2
     {

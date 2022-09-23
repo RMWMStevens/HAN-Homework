@@ -1,7 +1,7 @@
-﻿using OOSE.W4.FizzBuzz_TTD.Exercises;
+﻿using OOSE.W4.FizzBuzz_TTD.Player;
 using Xunit;
 
-namespace OOSE.W4.FizzBuzz_TTD.Tests.Exercises
+namespace OOSE.W4.FizzBuzz_TTD.Tests.Player
 {
     public class PlayerExercise2Tests
     {
