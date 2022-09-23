@@ -27,8 +27,4 @@
     <ProjectReference Include="..\2223.OOSE.W4.FizzBuzz_TTD\2223.OOSE.W4.FizzBuzz_TTD.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="StringCalculator\" />
-  </ItemGroup>
-
 </Project>
