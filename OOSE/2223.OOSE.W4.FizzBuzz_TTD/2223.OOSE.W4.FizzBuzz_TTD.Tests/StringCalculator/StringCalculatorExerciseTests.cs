@@ -44,9 +44,17 @@ namespace OOSE.W4.FizzBuzz_TTD.Tests.StringCalculator
         }
 
         [Fact]
-        public void Add_ShoulThrowFormatException_ForIllegalSeparatorsInput()
+        public void Add_ShouldThrowFormatException_ForIllegalSeparatorsInput()
         {
             Assert.Throws<FormatException>(() => sut.Add("1,\n"));
+        }
+
+        [Theory]
+        [InlineData("//;\n1;2", 3)]
+        [InlineData("//|\n1|2", 3)]
+        public void Add_ShouldReturnSum_WhenDelimiterChanged(string numbers, int expected)
+        {
+            Assert.Equal(expected, sut.Add(numbers));
         }
     }
 }

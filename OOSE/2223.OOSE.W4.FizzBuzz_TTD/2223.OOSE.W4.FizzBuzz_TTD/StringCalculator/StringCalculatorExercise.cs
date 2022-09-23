@@ -2,15 +2,20 @@
 {
     public class StringCalculatorExercise
     {
-        readonly char[] Separators = { ',', '\n' };
+        readonly List<char> separators = new() { ',', '\n' };
 
         public int Add(string numbers)
         {
             if (string.IsNullOrEmpty(numbers)) return 0;
 
-            var parsedNumbers = numbers.Split(Separators)
-                                       .Select(_ => int.Parse(_));
+            if (numbers.IndexOf("//") == 0 && numbers.IndexOf("\n") == 3)
+            {
+                separators.Add(numbers.ElementAt(2));
+                numbers = numbers.Remove(0, 4);
+            }
 
+            var parsedNumbers = numbers.Split(separators.ToArray())
+                                       .Select(_ => int.Parse(_));
             return parsedNumbers.Sum();
         }
     }
