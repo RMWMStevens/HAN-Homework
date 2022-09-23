@@ -2,21 +2,32 @@
 {
     public class StringCalculatorExercise
     {
-        readonly List<char> separators = new() { ',', '\n' };
+        readonly List<char> delimiters = new() { ',', '\n' };
 
         public int Add(string numbers)
         {
             if (string.IsNullOrEmpty(numbers)) return 0;
 
-            if (numbers.IndexOf("//") == 0 && numbers.IndexOf("\n") == 3)
+            if (numbers.StartsWith("//") && numbers.IndexOf('\n') == 3)
             {
-                separators.Add(numbers.ElementAt(2));
+                delimiters.Add(numbers.ElementAt(2));
                 numbers = numbers.Remove(0, 4);
             }
 
-            return numbers.Split(separators.ToArray())
-                          .Select(_ => int.Parse(_))
-                          .Sum();
+            var parsedNumbers = numbers.Split(delimiters.ToArray())
+                                       .Select(_ => int.Parse(_));
+
+            ThrowExceptionOnNegativeNumbers(parsedNumbers);
+
+            return parsedNumbers.Sum();
+        }
+
+        private void ThrowExceptionOnNegativeNumbers(IEnumerable<int> parsedNumbers)
+        {
+            if (parsedNumbers.Any(_ => _ < 0))
+            {
+                throw new ArgumentException($"Negatives not allowed: {string.Join(", ", parsedNumbers.Where(_ => _ < 0))}");
+            }
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using OOSE.W4.FizzBuzz_TTD.StringCalculator;
+﻿using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities;
+using OOSE.W4.FizzBuzz_TTD.StringCalculator;
+using System.Security.Authentication;
 using Xunit;
 
 namespace OOSE.W4.FizzBuzz_TTD.Tests.StringCalculator
@@ -63,9 +65,18 @@ namespace OOSE.W4.FizzBuzz_TTD.Tests.StringCalculator
         [Theory]
         [InlineData("//;\n1;2", 3)]
         [InlineData("//|\n1|2", 3)]
-        public void Add_ShouldReturnSum_WhenDelimiterChanged(string numbers, int expected)
+        public void Add_ShouldReturnSum_ForCustomDelimiter(string numbers, int expected)
         {
             Assert.Equal(expected, sut.Add(numbers));
+        }
+
+        [Theory]
+        [InlineData("-1, 1, 2", "-1")]
+        [InlineData("-1, -2, -3, 4", "-1, -2, -3")]
+        public void Add_ShouldThrowException_ForNegativeNumbers(string numbers, string expectedContains)
+        {
+            var exception = Assert.Throws<ArgumentException>(() => sut.Add(numbers));
+            Assert.Contains(expectedContains, exception.Message);
         }
     }
 }
