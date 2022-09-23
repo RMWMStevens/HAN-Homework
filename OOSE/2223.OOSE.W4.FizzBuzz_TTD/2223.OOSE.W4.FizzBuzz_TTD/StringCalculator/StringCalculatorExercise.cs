@@ -22,11 +22,11 @@
             return parsedNumbers.Sum();
         }
 
-        private void ThrowExceptionOnNegativeNumbers(IEnumerable<int> parsedNumbers)
+        private void ThrowExceptionOnNegativeNumbers(IEnumerable<int> numbers)
         {
-            if (parsedNumbers.Any(_ => _ < 0))
+            if (numbers.Any(_ => _ < 0))
             {
-                throw new ArgumentException($"Negatives not allowed: {string.Join(", ", parsedNumbers.Where(_ => _ < 0))}");
+                throw new ArgumentException($"Negatives not allowed: {string.Join(", ", numbers.Where(_ => _ < 0))}");
             }
         }
     }

@@ -1,6 +1,4 @@
-﻿using Microsoft.VisualStudio.TestPlatform.CommunicationUtilities;
-using OOSE.W4.FizzBuzz_TTD.StringCalculator;
-using System.Security.Authentication;
+﻿using OOSE.W4.FizzBuzz_TTD.StringCalculator;
 using Xunit;
 
 namespace OOSE.W4.FizzBuzz_TTD.Tests.StringCalculator
@@ -71,12 +69,12 @@ namespace OOSE.W4.FizzBuzz_TTD.Tests.StringCalculator
         }
 
         [Theory]
-        [InlineData("-1, 1, 2", "-1")]
-        [InlineData("-1, -2, -3, 4", "-1, -2, -3")]
-        public void Add_ShouldThrowException_ForNegativeNumbers(string numbers, string expectedContains)
+        [InlineData("-1, 1, 2", "Negatives not allowed: -1")]
+        [InlineData("-1, -2, -3, 4", "Negatives not allowed: -1, -2, -3")]
+        public void Add_ShouldThrowException_ForNegativeNumbers(string numbers, string expected)
         {
             var exception = Assert.Throws<ArgumentException>(() => sut.Add(numbers));
-            Assert.Contains(expectedContains, exception.Message);
+            Assert.Equal(expected, exception.Message);
         }
     }
 }
