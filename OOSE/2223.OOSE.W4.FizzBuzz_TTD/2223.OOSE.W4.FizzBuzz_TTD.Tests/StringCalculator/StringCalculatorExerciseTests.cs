@@ -35,5 +35,18 @@ namespace OOSE.W4.FizzBuzz_TTD.Tests.StringCalculator
         {
             Assert.Equal(expected, sut.Add(numbers));
         }
+
+        [Theory]
+        [InlineData("1\n2,3", 6)]
+        public void Add_ShouldReturnSum_ForNewLinesBetweenNumbers(string numbers, int expected)
+        {
+            Assert.Equal(expected, sut.Add(numbers));
+        }
+
+        [Fact]
+        public void Add_ShoulThrowFormatException_ForIllegalSeparatorsInput()
+        {
+            Assert.Throws<FormatException>(() => sut.Add("1,\n"));
+        }
     }
 }
