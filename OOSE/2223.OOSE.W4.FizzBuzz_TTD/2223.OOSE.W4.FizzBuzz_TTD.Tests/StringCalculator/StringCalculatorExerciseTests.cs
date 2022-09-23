@@ -14,7 +14,16 @@ namespace OOSE.W4.FizzBuzz_TTD.Tests.StringCalculator
         }
 
         [Theory]
+        [InlineData("1", 1)]
+        [InlineData("10", 10)]
+        public void Add_ShouldReturnValue_ForSingleNumberInput(string numbers, int expected)
+        {
+            Assert.Equal(expected, sut.Add(numbers));
+        }
+
+        [Theory]
         [InlineData("1,2", 3)]
+        [InlineData("3,7", 10)]
         public void Add_ShouldReturnSum_ForTwoNumberInputs(string numbers, int expected)
         {
             Assert.Equal(expected, sut.Add(numbers));
@@ -22,6 +31,7 @@ namespace OOSE.W4.FizzBuzz_TTD.Tests.StringCalculator
 
         [Theory]
         [InlineData("1,2,3", 6)]
+        [InlineData("2,4,8", 14)]
         public void Add_ShouldReturnSum_ForThreeNumberInputs(string numbers, int expected)
         {
             Assert.Equal(expected, sut.Add(numbers));
@@ -38,6 +48,7 @@ namespace OOSE.W4.FizzBuzz_TTD.Tests.StringCalculator
 
         [Theory]
         [InlineData("1\n2,3", 6)]
+        [InlineData("10\n20,30", 60)]
         public void Add_ShouldReturnSum_ForNewLinesBetweenNumbers(string numbers, int expected)
         {
             Assert.Equal(expected, sut.Add(numbers));

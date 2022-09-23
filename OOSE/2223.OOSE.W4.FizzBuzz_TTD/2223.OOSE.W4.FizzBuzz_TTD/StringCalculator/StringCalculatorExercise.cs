@@ -14,9 +14,9 @@
                 numbers = numbers.Remove(0, 4);
             }
 
-            var parsedNumbers = numbers.Split(separators.ToArray())
-                                       .Select(_ => int.Parse(_));
-            return parsedNumbers.Sum();
+            return numbers.Split(separators.ToArray())
+                          .Select(_ => int.Parse(_))
+                          .Sum();
         }
     }
 }
