@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2223.OOSE.W6.Restaurant.Tests", "2223.OOSE.W6.Restaurant.Tests\2223.OOSE.W6.Restaurant.Tests.csproj", "{741B5993-2D3E-4AEA-A091-45AD44C31FC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2223.OOSE.W6.Restaurant.Tests", "2223.OOSE.W6.Restaurant.Tests\2223.OOSE.W6.Restaurant.Tests.csproj", "{741B5993-2D3E-4AEA-A091-45AD44C31FC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2223.OOSE.W6.Restaurant", "2223.OOSE.W6.Restaurant\2223.OOSE.W6.Restaurant.csproj", "{16D76349-6CFC-4C1D-B6AD-F656D67720BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2223.OOSE.W6.Restaurant", "2223.OOSE.W6.Restaurant\2223.OOSE.W6.Restaurant.csproj", "{16D76349-6CFC-4C1D-B6AD-F656D67720BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2223.OOSE.W6.Restaurant.Lib", "2223.OOSE.W6.Restaurant.Lib\2223.OOSE.W6.Restaurant.Lib.csproj", "{C49DE856-E685-4F67-8602-1B8AF44F1CDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{16D76349-6CFC-4C1D-B6AD-F656D67720BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16D76349-6CFC-4C1D-B6AD-F656D67720BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16D76349-6CFC-4C1D-B6AD-F656D67720BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C49DE856-E685-4F67-8602-1B8AF44F1CDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C49DE856-E685-4F67-8602-1B8AF44F1CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C49DE856-E685-4F67-8602-1B8AF44F1CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C49DE856-E685-4F67-8602-1B8AF44F1CDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

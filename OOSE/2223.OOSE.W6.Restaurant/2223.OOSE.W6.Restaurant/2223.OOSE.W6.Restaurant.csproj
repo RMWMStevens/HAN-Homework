@@ -8,4 +8,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\2223.OOSE.W6.Restaurant.Lib\2223.OOSE.W6.Restaurant.Lib.csproj" />
+  </ItemGroup>
+
 </Project>
